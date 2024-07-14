@@ -6,6 +6,7 @@ import {
 } from "fastify-type-provider-zod";
 import { createTrip } from "./routes/trips/create-trip";
 import { createLink } from "./routes/links/create-link";
+import { getTripLinks } from "./routes/links/get-trip-links";
 
 const app = fastify();
 
@@ -18,5 +19,7 @@ app.setSerializerCompiler(serializerCompiler);
 
 app.register(createTrip);
 app.register(createLink);
+
+app.register(getTripLinks);
 
 app.listen({ port: 3333 }).then(() => console.log("🚀 Server Running"));

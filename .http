@@ -15,10 +15,14 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:3333/trip/c18a6c70-7bea-4aa4-87be-5dba58f26806/links
+POST http://localhost:3333/trip/fe4fa6ed-d5bc-495f-a2c4-6fcfba6f37b0/links
 Content-Type: application/json
 
 {
   "title": "Local Alugado",
   "url": "https://airnb.com/kc21413-dafas"
 }
+
+###
+
+GET http://localhost:3333/trip/fe4fa6ed-d5bc-495f-a2c4-6fcfba6f37b0/links
