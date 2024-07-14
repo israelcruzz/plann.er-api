@@ -9,7 +9,7 @@ export async function createLink(app: FastifyInstance) {
     {
       schema: {
         params: z.object({
-          tripId: z.string(),
+          tripId: z.string().uuid(),
         }),
         body: z.object({
           title: z.string(),

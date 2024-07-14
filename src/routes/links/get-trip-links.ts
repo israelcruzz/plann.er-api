@@ -9,7 +9,7 @@ export async function getTripLinks(app: FastifyInstance) {
     {
       schema: {
         params: z.object({
-          tripId: z.string(),
+          tripId: z.string().uuid(),
         }),
       },
     },
@@ -20,19 +20,16 @@ export async function getTripLinks(app: FastifyInstance) {
         where: {
           id: tripId,
         },
+        include: {
+          links: true,
+        },
       });
 
       if (!findTripWithSameId || !findTripWithSameId.is_confirmed) {
         throw new Error("Trip Not Found");
       }
 
-      const links = await prisma.link.findMany({
-        where: {
-          tripId,
-        },
-      });
-
-      return { links };
+      return { links: findTripWithSameId.links };
     }
   );
 }

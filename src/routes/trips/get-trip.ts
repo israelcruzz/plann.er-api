@@ -9,7 +9,7 @@ export async function getTrip(app: FastifyInstance) {
     {
       schema: {
         params: z.object({
-          tripId: z.string(),
+          tripId: z.string().uuid(),
         }),
       },
     },
