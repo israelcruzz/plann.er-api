@@ -17,6 +17,18 @@ Content-Type: application/json
 
 GET http://localhost:3333/trip/fe4fa6ed-d5bc-495f-a2c4-6fcfba6f37b0
 
+
+###
+
+PUT http://localhost:3333/trip/fe4fa6ed-d5bc-495f-a2c4-6fcfba6f37b0
+Content-Type: application/json
+
+{
+  "destination": "Santa Catarina",
+  "starts_at": "2024-12-10 18:00:00",
+  "ends_at": "2024-12-20 18:00:00"
+}
+
 ###
 
 POST http://localhost:3333/trip/fe4fa6ed-d5bc-495f-a2c4-6fcfba6f37b0/links
