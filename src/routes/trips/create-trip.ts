@@ -1,9 +1,9 @@
 import { FastifyInstance } from "fastify";
 import { ZodTypeProvider } from "fastify-type-provider-zod";
 import z from "zod";
-import { prisma } from "../lib/prisma";
-import { dayjs } from "../lib/dayjs";
-import { getMailClient } from "../lib/mail";
+import { prisma } from "../../lib/prisma";
+import { dayjs } from "../../lib/dayjs";
+import { getMailClient } from "../../lib/mail";
 import nodemailder from "nodemailer";
 
 export async function createTrip(app: FastifyInstance) {
@@ -53,6 +53,7 @@ export async function createTrip(app: FastifyInstance) {
                   name: owner_name,
                   email: owner_email,
                   is_owner: true,
+                  is_confirmed: true
                 },
                 ...email_to_invite.map((email) => {
                   return { email };

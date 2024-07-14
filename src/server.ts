@@ -4,7 +4,7 @@ import {
   serializerCompiler,
   validatorCompiler,
 } from "fastify-type-provider-zod";
-import { createTrip } from "./routes/create-trip";
+import { createTrip } from "./routes/trips/create-trip";
 
 const app = fastify();
 
