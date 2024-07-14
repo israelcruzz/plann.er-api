@@ -22,11 +22,7 @@ export async function getTripLinks(app: FastifyInstance) {
         },
       });
 
-      if (!findTripWithSameId) {
-        throw new Error("Trip Not Found");
-      }
-
-      if (!findTripWithSameId.is_confirmed) {
+      if (!findTripWithSameId || !findTripWithSameId.is_confirmed) {
         throw new Error("Trip Not Found");
       }
 
@@ -36,7 +32,7 @@ export async function getTripLinks(app: FastifyInstance) {
         },
       });
 
-      return links 
+      return { links };
     }
   );
 }

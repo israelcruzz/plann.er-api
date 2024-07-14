@@ -7,6 +7,7 @@ import {
 import { createTrip } from "./routes/trips/create-trip";
 import { createLink } from "./routes/links/create-link";
 import { getTripLinks } from "./routes/links/get-trip-links";
+import { getTrip } from "./routes/trips/get-trip";
 
 const app = fastify();
 
@@ -17,9 +18,11 @@ app.register(cors, {
 app.setValidatorCompiler(validatorCompiler);
 app.setSerializerCompiler(serializerCompiler);
 
-app.register(createTrip);
-app.register(createLink);
+app.register(getTrip);
+app.register(createTrip); 
 
+
+app.register(createLink);
 app.register(getTripLinks);
 
 app.listen({ port: 3333 }).then(() => console.log("🚀 Server Running"));
