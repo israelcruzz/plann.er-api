@@ -44,3 +44,7 @@ Content-Type: application/json
 ###
 
 GET http://localhost:3333/trip/fe4fa6ed-d5bc-495f-a2c4-6fcfba6f37b0/links
+
+###
+
+GET http://localhost:3333/trip/fe4fa6ed-d5bc-495f-a2c4-6fcfba6f37b0/participants

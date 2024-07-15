@@ -10,6 +10,7 @@ import { getTripLinks } from "./routes/links/get-trip-links";
 import { getTrip } from "./routes/trips/get-trip";
 import { updateTrip } from "./routes/trips/update-trip";
 import { confirmTrip } from "./routes/trips/confirm-trip";
+import { getTripParticipants } from "./routes/participants/get-trip-participants";
 
 const app = fastify();
 
@@ -21,9 +22,11 @@ app.setValidatorCompiler(validatorCompiler);
 app.setSerializerCompiler(serializerCompiler);
 
 app.register(getTrip);
-app.register(createTrip); 
-app.register(updateTrip); 
-app.register(confirmTrip)
+app.register(createTrip);
+app.register(updateTrip);
+app.register(confirmTrip);
+
+app.register(getTripParticipants);
 
 app.register(createLink);
 app.register(getTripLinks);
