@@ -12,6 +12,7 @@ import { updateTrip } from "./routes/trips/update-trip";
 import { confirmTrip } from "./routes/trips/confirm-trip";
 import { getTripParticipants } from "./routes/participants/get-trip-participants";
 import { confirmParticipant } from "./routes/participants/confirm-participant";
+import { inviteParticipant } from "./routes/participants/invite-participant";
 
 const app = fastify();
 
@@ -29,6 +30,7 @@ app.register(confirmTrip);
 
 app.register(getTripParticipants);
 app.register(confirmParticipant);
+app.register(inviteParticipant);
 
 app.register(createLink);
 app.register(getTripLinks);

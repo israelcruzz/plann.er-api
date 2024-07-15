@@ -48,3 +48,16 @@ GET http://localhost:3333/trip/fe4fa6ed-d5bc-495f-a2c4-6fcfba6f37b0/links
 ###
 
 GET http://localhost:3333/trip/fe4fa6ed-d5bc-495f-a2c4-6fcfba6f37b0/participants
+
+###
+
+POST http://localhost:3333/trip/b120dcc4-d7f6-4e50-b6c8-35a565f09e9c/invite
+Content-Type: application/json
+
+{
+  "email": "israelcruz@contact.com"
+}
+
+###
+
+GET http://localhost:3333/participants/fb67e994-1595-49b4-a7e3-304f4bd879fa/confirm
