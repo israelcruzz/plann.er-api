@@ -2,7 +2,7 @@ POST http://localhost:3333/trip
 Content-Type: application/json
 
 {
-  "destination": "Santa Catarina",
+  "destination": "São Jordão dos Campos, São Paulo",
   "starts_at": "2024-10-10 18:00:00",
   "ends_at": "2024-10-20 18:00:00",
   "owner_name": "Israel Cruz",
