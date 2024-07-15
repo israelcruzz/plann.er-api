@@ -75,3 +75,7 @@ Content-Type: application/json
 ###
 
 GET http://localhost:3333/trip/fe4fa6ed-d5bc-495f-a2c4-6fcfba6f37b0/activities
+
+###
+
+GET http://localhost:3333/participant/fb67e994-1595-49b4-a7e3-304f4bd879fa
