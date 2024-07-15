@@ -71,3 +71,7 @@ Content-Type: application/json
   "title": "Academia",
   "occurs_at": "2024-12-12 14:00:00"
 }
+
+###
+
+GET http://localhost:3333/trip/fe4fa6ed-d5bc-495f-a2c4-6fcfba6f37b0/activities
