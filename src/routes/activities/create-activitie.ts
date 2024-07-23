@@ -45,6 +45,7 @@ export async function createActivity(app: FastifyInstance) {
           occurs_at,
           title,
           tripId,
+          
         },
       });
 

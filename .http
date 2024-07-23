@@ -15,12 +15,12 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3333/trip/fe4fa6ed-d5bc-495f-a2c4-6fcfba6f37b0
+GET http://localhost:3333/trip/a04ad06c-7c7f-4ec8-a4bb-df869685cdec
 
 
 ###
 
-PUT http://localhost:3333/trip/fe4fa6ed-d5bc-495f-a2c4-6fcfba6f37b0
+PUT http://localhost:3333/trip/a04ad06c-7c7f-4ec8-a4bb-df869685cdec
 Content-Type: application/json
 
 {
@@ -64,7 +64,7 @@ GET http://localhost:3333/participants/fb67e994-1595-49b4-a7e3-304f4bd879fa/conf
 
 ###
 
-POST http://localhost:3333/trip/fe4fa6ed-d5bc-495f-a2c4-6fcfba6f37b0/activities
+POST http://localhost:3333/trip/a04ad06c-7c7f-4ec8-a4bb-df869685cdec/activities
 Content-Type: application/json
 
 {
@@ -74,8 +74,12 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3333/trip/fe4fa6ed-d5bc-495f-a2c4-6fcfba6f37b0/activities
+GET http://localhost:3333/trip/a04ad06c-7c7f-4ec8-a4bb-df869685cdec/activities
 
 ###
 
 GET http://localhost:3333/participant/fb67e994-1595-49b4-a7e3-304f4bd879fa
+
+###
+
+PATCH http://localhost:3333/activity/8cada531-5266-4a4c-82c3-28d989e7782d/done
